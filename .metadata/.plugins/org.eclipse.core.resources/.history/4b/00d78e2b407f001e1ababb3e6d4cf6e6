@@ -1,0 +1,53 @@
+package managers;
+
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+
+import enemies.Enemy;
+import helpz.LoadSave;
+import objects.Projectile;
+import objects.Tower;
+import scenes.Playing;
+import static helpz.Constants.Towers.*;
+
+public class ProjectileManager {
+	
+	private Playing playing;
+	private ArrayList<Projectile> projectiles = new ArrayList<>();
+	private BufferedImage[] proj_imgs;
+	
+	public ProjectileManager(Playing playing) {
+		this.playing = playing;
+		importImgs();
+	}
+	
+	private void importImgs() {
+		// x 7 8 9   y 1
+		BufferedImage atlas = LoadSave.getSpriteAtlas();
+		proj_imgs = new BufferedImage[3];
+		for(int i=0; i<3; i++)
+			proj_imgs[i] = atlas.getSubimage((7 + i) * 32, 32, 32, 32);
+	}
+	
+	public void newProjectile(Tower t, Enemy e) {
+		int type = getProjType(t);
+	}
+	
+	private int getProjType(Tower t) {
+		switch(t.getTowerType()) {
+		case ARCHER;
+		case CANNON;
+		case WIZARD;
+		}
+		return 0;
+	}
+
+	public void update() {
+		
+	}
+	
+	public void draw(Graphics g) {
+		
+	}
+}

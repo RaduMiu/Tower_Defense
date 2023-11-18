@@ -1,0 +1,37 @@
+package managers;
+
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+
+import helpz.LoadSave;
+import objects.Projectile;
+import scenes.Playing;
+
+public class ProjectileManager {
+	
+	private Playing playing;
+	private ArrayList<Projectile> projectiles = new ArrayList<>();
+	private BufferedImage[] proj_imgs;
+	
+	public ProjectileManager(Playing playing) {
+		this.playing = playing;
+	}
+	
+	private void importImgs() {
+		// x 7 8 9   y 1
+		BufferedImage atlas = LoadSave.getSpriteAtlas();
+		
+		for(int i=0; i<3; i++)
+			proj_imgs[i] = atlas.getSubimage((7 + i) * 32, 32, 32, 32);
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void draw(Graphics g) {
+		for(BufferedImage i : proj_imgs)
+			g.drawImage(i, 300, 300, null);
+	}
+}
