@@ -1,6 +1,7 @@
-This Java project, created in Eclipse, is the outcome of a Java course at Digital Stack funded by Google. The project incorporates knowledge of design patterns, object-oriented programming principles, and concepts gathered from online resources such as YouTube.
+  This Java project, created in Eclipse, is the outcome of a Java course at Digital Stack funded by Google. The project incorporates knowledge of design patterns, object-oriented programming principles, and concepts gathered from online resources such as YouTube.
 
-It is a tower defense application where a wave of enemies with unique characteristics follows a predefined path, attempting to reach the end. The objective is to strategically place defense units, such as archers, wizards, or cannons, along the path. These defense units possess distinctive features, including attack range, attack speed, and special abilities. The primary goal is to prevent the enemies from reaching the end of the path; failing to do so results in a loss for the player.
+  It is a tower defense application where a wave of enemies with unique characteristics follows a predefined path, attempting to reach the end.
+  The objective is to strategically place defense units, such as archers, wizards, or cannons, along the path. These defense units possess distinctive features, including attack range, attack speed, and special abilities. The primary goal is to prevent the enemies from reaching the end of the path; failing to do so results in a loss for the player.
 
 Play:
 
